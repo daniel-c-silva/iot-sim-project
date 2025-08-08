@@ -1,57 +1,77 @@
-My IoT Simulation Project
-This project is a full-stack application I built to simulate a real-time Internet of Things (IoT) sensor. It was a great opportunity for me to build a complete system from the ground up, starting with a C++ program and ending with a live web dashboard.
+# My IoT Simulation Project
 
-This application is composed of three main parts:
+This project is a full-stack application that simulates a real-time Internet of Things (IoT) sensor. It was a great opportunity to build a complete system from scratch, starting with a C++ sensor program and ending with a live web dashboard.
 
-A C++ program that acts as the "sensor," generating mock temperature data.
+---
 
-A Node.js back-end that runs the C++ program, processes its output, and streams the data to the web page using WebSockets.
+## Project Overview
 
-An HTML/JavaScript front-end that provides a dynamic dashboard to visualize the real-time sensor data using Chart.js.
+The application consists of three main components:
 
-Key Features ✨
-Real-Time Data Simulation: My C++ program generates new temperature data every second.
+1. **C++ Sensor Program**  
+   Generates mock temperature data every second.
 
-Inter-Process Communication: I designed the Node.js back-end to communicate directly with the C++ program to read its output.
+2. **Node.js Backend**  
+   Runs the C++ sensor program, processes its output, and streams data to the front-end via WebSockets.
 
-WebSocket Data Streaming: I moved from a polling method to using WebSockets to push data from the server to the browser in real-time. This provides a more efficient and live experience for the user.
+3. **HTML/JavaScript Frontend**  
+   Displays a dynamic dashboard visualizing real-time sensor data using Chart.js.
 
-Dynamic Web Dashboard: The HTML page displays the latest temperature reading and a live chart of historical data.
+---
 
-Visual Feedback: The dashboard's colors and animations change dynamically based on the temperature readings and the connection status.
+## Key Features ✨
 
-Technologies I Used 🛠️
-Frontend: HTML, CSS, JavaScript, Chart.js (for data visualization)
+- **Real-Time Data Simulation:** C++ sensor program outputs new temperature readings every second.  
+- **Inter-Process Communication:** Node.js backend interacts directly with the C++ sensor process to read data.  
+- **WebSocket Data Streaming:** Live, efficient streaming of sensor data to the browser without polling.  
+- **Dynamic Web Dashboard:** Displays latest temperature and live chart of historical data.  
+- **Visual Feedback:** Dashboard colors and animations adapt based on temperature and connection status.
 
-Backend: Node.js, Express.js (for the web server), child_process (for running the C++ program), ws (for WebSockets)
+---
 
-Sensor: C++ (with iostream and chrono)
+## Technologies Used 🛠️
 
-How to Run the Project 🚀
-To run this project, you need to have Node.js and a C++ compiler (like g++) installed on your system.
+- **Frontend:** HTML, CSS, JavaScript, Chart.js  
+- **Backend:** Node.js, Express.js, child_process (to run C++), ws (WebSockets)  
+- **Sensor:** C++ (iostream, chrono)
 
-1. Compile the C++ Sensor Program:
-Navigate to the sensor directory and compile the C++ file.
+---
 
-g++ sensor.cpp -o sensor
+## How to Run the Project 🚀
 
-2. Install Node.js Dependencies:
-Navigate to the backend directory and install the required packages.
+### Prerequisites
+- Node.js installed  
+- C++ compiler (e.g., g++) installed
 
-cd backend
+### Steps
+
+1. **Compile the C++ Sensor Program**  
+   ```bash
+   cd sensor
+   g++ sensor.cpp -o sensor
+Install Backend Dependencies
+
+bash
+Copiar
+Editar
+cd ../backend
 npm install
+Start the Backend Server
 
-3. Run the Backend Server:
-From the backend directory, start the server. This will also automatically run the C++ sensor program.
-
+bash
+Copiar
+Editar
 npm start
+This runs the Node.js server and the C++ sensor program.
 
-4. View the Dashboard:
-Open the index.html file in your web browser. You will see the real-time sensor data and the live chart.
+Open the Dashboard
+Open index.html in your browser to view real-time data and charts.
 
-Future Goals for this Project 🔮
-More Sensors: I'd like to expand the C++ program to simulate multiple data types (like humidity and pressure) and add corresponding visualizations to the dashboard.
+Future Goals 🔮
+More Sensors: Simulate additional data types (humidity, pressure) and add visualizations.
 
-Authentication: I want to add user login functionality and protect the data with authentication.
+Authentication: Implement user login and secure data access.
 
-Data Persistence: I'd like to store sensor data in a database to view historical trends over a longer period.
+Data Persistence: Store sensor data in a database to track historical trends over time.
+
+Feel free to reach out if you have any questions or want to contribute!
