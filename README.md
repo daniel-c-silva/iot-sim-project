@@ -19,7 +19,7 @@ The application consists of three main components:
 
 ---
 
-## Key Features ✨
+## Key Features 
 
 - **Real-Time Data Simulation:** C++ sensor program outputs new temperature readings every second.  
 - **Inter-Process Communication:** Node.js backend interacts directly with the C++ sensor process to read data.  
@@ -29,7 +29,7 @@ The application consists of three main components:
 
 ---
 
-## Technologies Used 🛠️
+## Technologies Used 
 
 - **Frontend:** HTML, CSS, JavaScript, Chart.js  
 - **Backend:** Node.js, Express.js, child_process (to run C++), ws (WebSockets)  
@@ -37,7 +37,7 @@ The application consists of three main components:
 
 ---
 
-## How to Run the Project 🚀
+## How to Run the Project 
 
 ### Prerequisites
 - Node.js installed  
@@ -67,7 +67,8 @@ This runs the Node.js server and the C++ sensor program.
 Open the Dashboard
 Open index.html in your browser to view real-time data and charts.
 
-Future Goals 🔮
+Future Goals 
+
 More Sensors: Simulate additional data types (humidity, pressure) and add visualizations.
 
 Authentication: Implement user login and secure data access.
