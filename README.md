@@ -1,6 +1,6 @@
 # My IoT Simulation Project
 
-![A GIF of the real-time IoT dashboard in action](https://github.com/daniel-c-silva/iot-sim-project/blob/main/iotsim.gif?raw=true)
+![A GIF of the real-time IoT dashboard in action](https://github.com/daniel-c-silva/iot-sim-project/blob/assets/iotsim.gif?raw=true)
 
 This project is a full-stack application that simulates a real-time Internet of Things (IoT) sensor. It was a great opportunity to build a complete system from scratch, starting with a C++ sensor program and ending with a live web dashboard.
 
