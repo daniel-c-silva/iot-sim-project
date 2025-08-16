@@ -54,15 +54,11 @@ The application consists of three main components:
 Install Backend Dependencies
 
 bash
-Copiar
-Editar
 cd ../backend
 npm install
 Start the Backend Server
 
 bash
-Copiar
-Editar
 npm start
 This runs the Node.js server and the C++ sensor program.
 
